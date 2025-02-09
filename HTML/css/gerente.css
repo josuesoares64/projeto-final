@@ -1,0 +1,119 @@
+#listaUsuarios{
+    display: grid;
+    gap: 5px 5px;
+}
+
+.funcionarios{
+    text-align: center;
+    input, button{
+        padding: 9px;
+        border-radius: 6px;
+        text-align: center;
+    }
+    button:hover{
+       box-shadow: 1px 2px 1px rgb(0, 0, 0);
+    }
+}
+
+#adicionar-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 32px;
+    max-width: 500px;
+    background-color: #f8f9fa;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 2px solid #000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#adicionar-usuario input, 
+#adicionar-usuario button {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%; /* Faz os elementos ocuparem a largura do container */
+}
+
+#adicionar-usuario button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+#adicionar-usuario button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#logs-acesso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin: 50px auto; 
+    padding: 20px;
+    max-width: 800px;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#tabelaLogs {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+#tabelaLogs th, 
+#tabelaLogs td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#tabelaLogs thead {
+    background-color: #333;
+    color: white;
+}
+
+
+#atividades-recursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#tabelaAtividades {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabelaAtividades th, 
+#tabelaAtividades td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#tabelaAtividades thead {
+    background-color: #333;
+    color: white;
+}

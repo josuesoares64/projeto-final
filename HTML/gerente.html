@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/paginas.css">
+    <link rel="stylesheet" href="css/gerente.css">
+    <title>Indústrias Wayne</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagem/48b99cb0707f588c87f242c2d9d7e2f9.jpg" alt="">
+            <h1>Indústrias Wayne</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#adicionar-usuario">Adicionar</a></li>
+                <li><a href="#logs-acesso">Logs</a></li>
+                <li><a href="#atividades-recursos">Recursos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="perfil">
+            <h2>Bem-vindo, <span id="nomeUsuario"></span>!</h2>
+            <p>Email: <span id="emailUsuario"></span></p>
+            <p>Cargo: <span id="cargoUsuario"></span></p>
+        </section>
+        <section class="funcionarios">
+            <h2>Funcionarios</h2>
+            <ul id="listaUsuarios"></ul>
+        </section>
+        <section id="adicionar-usuario">
+            <h2>Adicionar Novo Usuário</h2>
+            <form id="form-adicionar-usuario">
+                <label for="nome">Nome:</label> 
+                <input type="text" id="nome" required> <br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" required> <br>
+        
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required minlength="6"> <br>
+        
+                <label for="role">Cargo:</label>
+                <select id="role" required>
+                    <option value="funcionario">Funcionário</option>
+                    <option value="gerente">Gerente</option>
+                    <option value="administrador">Administrador</option>
+                </select> <br>
+        
+                <button type="submit">Adicionar Usuário</button>
+        <section id="logs-acesso">
+            <h2>Logs de Acesso</h2>
+            <table id="tabelaLogs">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuário</th>
+                        <th>Tipo de Acesso</th>
+                        <th>Data de Acesso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="atividades-recursos">
+            <h2>Atividades de Recursos</h2>
+            <table id="tabelaAtividades">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Recurso</th>
+                        <th>Tipo de Atividade</th>
+                        <th>Data da Atividade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+          
+    </main>
+    <footer>
+        <div class="contatos" id="contatos">
+            <div class="empresa">
+                <p class="texto">Sobre</p>
+                <p class="texto">Equipamento</p>
+                <p class="texto">História</p>
+            </div>
+            <div class="suporte">
+                <p class="texto">Contatar</p>
+                <p class="texto">FAQ</p>
+                <p class="texto">Local</p>
+            </div>
+            <div class="legal">
+                <p class="texto">Privacidade</p>
+                <p class="texto">Terminais</p>
+                <p class="texto">Conformidade</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JavaScript/gerente.js"></script>
+</body>
+</html>

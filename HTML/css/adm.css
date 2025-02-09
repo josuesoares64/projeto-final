@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #2f3e46;
+}
+
+#perfil, #equipamentos {
+    width: 100%;
+    max-width: 800px; 
+    margin-bottom: 60px; 
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#perfil h2, #equipamentos h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#perfil p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+#equipamentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#listaEquipamentos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 30px;
+}
+
+#listaEquipamentos div {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+}

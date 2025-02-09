@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(250, 250, 250);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço restante */
+    background-color: #2f3e46;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo h1 {
+    font-size: .9em;
+    margin-top: 35px;
+}
+
+img {
+    height: 90px;
+}
+
+nav {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+ul li {
+    margin: 5px;
+    list-style-type: none;
+}
+
+#perfil {
+    padding: 70px;
+    height: 200px;
+}
+
+#nomeUsuario {
+    padding: 5px;
+}
+
+#emailUsuario, #cargoUsuario {
+    margin-top: 80px;
+    height: 90px;
+    font-size: 1.3em;
+}
+
+.contatos {
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+}
+
+.texto {
+    padding: 9px;
+}
+
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
